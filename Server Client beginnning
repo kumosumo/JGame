@@ -1,0 +1,21 @@
+//link https://www.youtube.com/watch?v=1a3TtPr_yvI
+import java.io.*;
+improt java.net.*;
+
+public class Server {
+	
+	static ServerSocket serverSocket;
+	static Socket socket;
+	static DataOutputStream out;
+	public static void main(String[] args) throws Exception{
+		System.out.println("Starting Server...");
+		serverSocket=new ServerSocket(7777);
+		System.out.println("Server Started...");
+		socket = serverSocket.accept();
+		Syste.out.println("Connection from: " + socket.getLine Address());
+		out = new DataOutputStream(socket.getOutputStream());
+		out.writeUTF("This is a test of Java Sockets");
+		
+	}
+}
+
