@@ -112,7 +112,7 @@ public class Player extends Applet implements KeyListener{
 			return p7;			
 		if(Xvec>0)
 			return p1;
-	    if (Xvec<0)
+		if (Xvec<0)
 			return p3;
 		if (Yvec>0)
 			return p2;
